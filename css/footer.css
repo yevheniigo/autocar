@@ -1,0 +1,150 @@
+.footer {
+    width: 100%;
+    background: #000;
+    margin-top: 50px;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-logo {
+    width: 130px;
+}
+
+.footer-text {
+    color: #fff;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.footer-link a{
+    color: #C8C8C8;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-top: 2px;
+    transition: 0.3s;
+    display: block;
+    position: relative;
+}
+
+.footer-link a:nth-child(1) {
+    margin-top: 0px;
+}
+
+.footer-link a::after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    background: #fff;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.footer-link a:hover::after {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.footer-link a:hover {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.flex-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info {
+    width: 40%;
+}
+
+.footer-link {
+    width: 17%;
+}
+
+.white-footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.white-footer-link a {
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 16px;
+    color: #000;
+    padding-left: 20px;
+}
+
+.copyright {
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 16px;
+    color: #000; 
+}
+
+@media screen and (max-width: 1170px) {
+    .footer-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer-info {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-footer {
+        flex-direction: column;
+    }
+
+    .footer-info, .footer-link {
+        width: 100%;
+    }
+
+    .footer-info {
+        padding-bottom: 20px;
+    }
+
+    .footer-link {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 2px solid #C8C8C8;
+    }
+
+    .footer-link a {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    
+
+    .white-footer-flex {
+        flex-direction: column;
+    }
+
+    .white-footer-link {
+        text-align: center;
+    }
+
+    .white-footer-link a {
+        padding: 10px;
+    }
+
+    .white-footer .footer-content {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
